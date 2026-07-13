@@ -10,7 +10,7 @@
  */
 export function checkPrimitiveType(val) {
   // TODO: typeof 연산자를 사용해 타입을 판별하고 그 결과를 반환하세요.
-  return '';
+  return typeof val;
 }
 
 /**
@@ -22,5 +22,5 @@ export function checkPrimitiveType(val) {
  */
 export function formatUserWelcome(name = '손님', points = 0) {
   // TODO: 백틱(`)을 사용해 "안녕하세요, [name]님! 보유 포인트는 [points]점입니다." 형식의 문자열을 반환하세요.
-  return '';
+  return `안녕하세요, ${name}님! 보유 포인트는 ${points}점입니다.`;
 }

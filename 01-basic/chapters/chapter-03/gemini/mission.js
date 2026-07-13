@@ -11,5 +11,6 @@
  */
 export function parseNumberSafely(val) {
   // TODO: 값을 숫자로 변환한 뒤 NaN인지 확인하여 알맞은 결과를 반환하세요.
-  return 0;
+
+  return Number.isNaN(Number(val)) ? 'NaN_Detected' : Number(val);
 }
